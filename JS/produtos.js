@@ -26,3 +26,7 @@ class Cama extends Produto{
         this.tamanho=tamanho
     }
 }
+
+// RAÇÕES
+let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg",150,15,"Cachorro")
+console.log(rGoldenEspecial)
