@@ -13,5 +13,13 @@ nav{text-align: center;}
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 
+.dog{
+    align-self: flex-end;
+}
+
+h2{align-self: self-start;}
+
+.recomendados{margin-top: 60%;}
