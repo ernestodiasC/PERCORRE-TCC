@@ -1,19 +1,32 @@
-body{background: linear-gradient(to bottom,#fffdf0 40%,#fdfbd4 );}
+body{margin: 0px;
+padding: 0px;}
 
 nav{text-align: center;}
 
+
+
 .container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
     grid-template-areas: 
-"banner banner banner banner"
-"banner banner banner banner"
-"main main main main"
-"main main main main"
-"footer footer footer footer";
-
-.banner{grid-area: banner;background-color: #ffa200;}
+"banner banner banner banner banner banner banner banner banner banner banner banner"
+"banner banner banner banner banner banner banner banner banner banner banner banner"
+"header header header header header header header header header header header header"
+"header header header header header header header header header header header header"
+"main main main main main main main main main main main main"
+"main main main main main main main main main main main main"
+"main main main main main main main main main main main main"
+"main main main main main main main main main main main main"
+"main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2"
+"main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2"
+"footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
 .extras{grid-area: footer; background-color: #74513d;}
+.banner1{grid-area: banner;
+width: 100vw;
+}
+
+:root{padding: 0px;
+margin: 0px;}
