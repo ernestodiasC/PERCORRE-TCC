@@ -10,4 +10,14 @@ function loadScript(url,condition,callback){
   }
 }
 
+var G={
+  PRODUTOS:{},
+  F:{},
+}
+
 loadScript("produtos",true,function(){})
+switch(document.querySelector("title").innerText){
+case"Produto":
+  loadScript("tela_produto",true,function(){})
+  break
+}

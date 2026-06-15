@@ -4,6 +4,9 @@ class Produto{
         this.tipo=tipo
         this.img=img
         this.preco=preco
+        this.id=img
+
+        G.PRODUTOS[this.id]=this
     }
 }
 class Racao extends Produto{
@@ -27,6 +30,13 @@ class Cama extends Produto{
     }
 }
 
+G.F.get_produto_by_id=function(id){
+    if(Object.hasOwn(G.PRODUTOS,id)){
+        return G.PRODUTOS[id]
+    }
+    return null
+}
+
 // RAÇÕES
-let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg",150,15,"Cachorro")
-console.log(rGoldenEspecial)
+let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg",140,15,"Cachorro")
+console.log(G.PRODUTOS)
