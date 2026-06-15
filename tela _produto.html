@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produto</title>
 </head>
 <body>
    <main>
     <a href="./catalogo.html">X</a>
-<img src="./racaogolden.jpg" alt="golden">
+<img src="./racao.jpg" alt="golden" id="imagem_golden">
 
-<h3>racao freshmeat caes 100g</h3>
-<p>100g</p>
-<p>preço</p>
-<p>sabor</p>
+<h3 id="nome_racao">racao freshmeat caes 100g</h3>
+<p id="peso_racao">100g</p>
+<p id="preco_racao">preço</p>
+<p id="animal_racao">sabor</p>
  
+<h2>adicionar ao carrinho:</h2> 
 <div class="contador">
-<button onclick="mudar(-1)">-</button>
+<button onclick="G.F.mudar_quantidade('qtd2',-1)">-</button>
 <span id="qtd2">1</span>
-<button onclick="mudar(1)">+</button>
-
- <h2>adicionar ao carrinho</h2> 
- 
- <!-- linkar esse botao no js praa adicionar ao carrinho -->
-
-<h2>comprar agora</h2>
-<!-- linkar esse botao no js ir direto pra pagina de pagamento -->
-
+<button onclick="G.F.mudar_quantidade('qtd2',1)">+</button>
 
 <h3>detalhes do produto</h3><br>
 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, inventore sunt! Debitis tempora, dicta ratione iusto omnis eos deserunt possimus.</h4>
 </main> 
+
+<script src="./JS/main.js"></script>
 </body>
 </html>
