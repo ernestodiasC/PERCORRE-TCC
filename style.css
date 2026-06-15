@@ -1,20 +1,25 @@
-body{background: linear-gradient(to bottom,#fffdf0 40%,#fdfbd4 );}
+body{margin: 2px;
+padding: 2px;
+background-image: url(./banner1.png);
+background-repeat:no-repeat ;
+background-size: 100vw 50%;}
 
 nav{text-align: center;}
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-grid-template-areas: 
-"banner banner banner banner"
-"banner banner banner banner"
-"main main main main"
-"main main main main"
-"main main main main"
-"footer footer footer footer";
 
-.banner{grid-area: banner;background-color: #ffa200;}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.extras{grid-area: footer; background-color: #74513d;}
+.dog{
+    align-self: flex-end;
+}
+
+h2{align-self: self-start;}
+
+.recomendados{margin-top: 60%;}
