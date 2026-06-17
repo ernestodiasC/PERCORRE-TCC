@@ -39,5 +39,9 @@ G.F.get_produto_by_id=function(id){
 }
 
 // RAÇÕES
-let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg","140","15kg","Cachorro")
+// Caes
+let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg","129,99","15kg","Cachorro")
+let rPremieRRacasGrandes=new Racao("PremieR - Raças Grandes","premieRracasgrandes.png","289,99","15kg","Cachorro")
+// Gatos
+let rWhiskasFrango200g=new Racao("Whiskas - Frango","whiskas200g.png","27.99","900g","Gato")
 console.log(G.PRODUTOS)
