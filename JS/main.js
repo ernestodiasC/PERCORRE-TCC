@@ -10,4 +10,21 @@ function loadScript(url,condition,callback){
   }
 }
 
+var G={
+  PRODUTOS:{},
+  F:{
+    mudar_quantidade:function(idx,quant){
+      let elemento=document.getElementById(idx)
+      quant=Number(elemento.innerText)+quant
+      if(quant<1){quant=1}
+      elemento.innerText=quant
+    },
+  },
+}
+
 loadScript("produtos",true,function(){})
+switch(document.querySelector("title").innerText){
+case"Produto":
+  loadScript("tela_produto",true,function(){})
+  break
+}
