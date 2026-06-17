@@ -1,3 +1,4 @@
+G={PRODUTOS:{},F:{}}
 class Produto{
     constructor(nome,tipo,img,preco){
         this.nome=nome
@@ -11,10 +12,11 @@ class Produto{
     }
 }
 class Racao extends Produto{
-    constructor(nome,img,preco,peso,animal){
+    constructor(nome,img,preco,peso,animal,sabores){
         super(nome,"Ração",img,preco)
         this.peso=peso
         this.animal=animal
+        this.sabores=sabores
     }
 }
 class Tulha extends Produto{
@@ -40,8 +42,12 @@ G.F.get_produto_by_id=function(id){
 
 // RAÇÕES
 // Caes
-let rGoldenEspecial=new Racao("Golden Especial - Frango e Carne","racaogolden.jpg","129,99","15kg","Cachorro")
-let rPremieRRacasGrandes=new Racao("PremieR - Raças Grandes","premieRracasgrandes.png","289,99","15kg","Cachorro")
+new Racao("Golden Especial - Frango e Carne - Adulto","racao_golden_special_frango_e_carne_caes_adultos_15kg.jpg","129.99","15kg","Cachorro",["Frango","Carne"])
+new Racao("PremieR - Carne - Adulto - Raças Grandes","premier_racas_grandes_adultos_15kg.png","229.80","15kg","Cachorro",["Carne"])
+new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_frango_e_cereais_10,1kg.png","179.99","10.1kg","Cachorro",["Carne","Frango","Cereais"])
+
 // Gatos
-let rWhiskasFrango200g=new Racao("Whiskas - Frango","whiskas200g.png","27.99","900g","Gato")
+new Racao("Whiskas - Frango","whiskas200g.png","27.80","900g","Gato",["Frango"])
+new Racao("Royal Canin - Sensible - Gatos Adultos","royal_canin_sensible_gatos_adultos.png","99.99","1,5kg","Gato",["Sensible"])
+new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"])
 console.log(G.PRODUTOS)
