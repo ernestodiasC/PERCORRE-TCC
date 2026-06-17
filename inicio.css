@@ -1,0 +1,39 @@
+body{background-image: url("./src/inicio/bannernovo.png");
+
+background-size: auto 110vh;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: row;
+}
+:root{font-size: 20px;}
+
+.dogbanner{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width:11rem;
+    margin-left: 60rem;
+    margin-bottom: 2rem;
+}
+
+.banner{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.produtosrecomendados1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28rem;
+}
+
+.enderecocard{display: flex;
+justify-content: center;
+align-items: center;}
+
+.cardinfo{margin-top: 20rem;}
+
+.visite{display: flex;
+justify-content: center;
+position: absolute;}
