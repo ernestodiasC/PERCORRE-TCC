@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Percorre</title>
+    <title>Catálogo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <script src="main.js"></script>
     <header>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="contato.html">Contato</a>
+        <nav class="menu">
+            <a href="./index.html">Início</a>
+            <a href="#">Catálogo</a>
             <div class="carrinho-icon" onclick="mostrarCarrinho()">
                 🛒 <span id="total-itens">0</span>
             </div>
@@ -35,34 +34,34 @@
         <div class="catalogo">
             <!-- PRODUTO 1 -->
             <div class="produto" data-categoria="cao">
-                <a href="./tela_produto.html">
-                    <img src="./racaogolden.jpg" alt="Ração Golden">
+                <a id="dog_0_link" href="./tela_produto.html?id=racaogolden.jpg">
+                    <img class="catalogo_img" id="dog_0_img"src="./racaogolden.jpg" alt="Ração Golden">
                 </a>
-                <h4>Ração Golden Cães Adultos</h4>
-                <p class="preco">R$ 129,90</p>
+                <h4 id="dog_0_nome">Ração Golden Cães Adultos</h4>
+                <p id="dog_0_preco">R$ 129,90</p>
                 <div class="contador">
                     <button onclick="mudarQtd('golden', -1)">-</button>
                     <span id="qtd-golden">0</span>
                     <button onclick="mudarQtd('golden', 1)">+</button>
                 </div>
-                <button class="btn-add" onclick="addCarrinho('Ração Golden', 129.90, 'golden')">
+                <button class="btn-add" onclick="">
                     Adicionar ao Carrinho
                 </button>
             </div>
 
             <!-- PRODUTO 2 - EXEMPLO -->
             <div class="produto" data-categoria="gato">
-                <a href="./tela_produto.html">
-                    <img src="./racaogato.jpg" alt="Ração Gato">
+                <a id="gato_0_link" href="./tela_produto.html">
+                    <img class="catalogo_img" id="gato_0_img" src="./racaogato.jpg" alt="Ração Gato">
                 </a>
-                <h4>Ração Premium Gatos</h4>
-                <p class="preco">R$ 89,90</p>
+                <h4 id="gato_0_nome">Ração Premium Gatos</h4>
+                <p id="gato_0_preco">R$ 89,90</p>
                 <div class="contador">
                     <button onclick="mudarQtd('gato', -1)">-</button>
                     <span id="qtd-gato">0</span>
                     <button onclick="mudarQtd('gato', 1)">+</button>
                 </div>
-                <button class="btn-add" onclick="addCarrinho('Ração Gatos', 89.90, 'gato')">
+                <button class="btn-add" onclick="">
                     Adicionar ao Carrinho
                 </button>
             </div>
@@ -79,6 +78,8 @@
             </div>
         </div>
     </main>
+
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
