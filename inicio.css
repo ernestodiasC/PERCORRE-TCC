@@ -5,10 +5,9 @@ background-repeat: no-repeat;
 display: flex;
 flex-direction: row;
 }
-:root{font-size: 20px;}
+
 
 .dogbanner{
-    display: flex;
     justify-content: flex-end;
     position: absolute;
     width:11rem;
@@ -18,24 +17,45 @@ flex-direction: row;
 
 .banner{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: 7rem;
 }
 
 .produtosrecomendados1{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 28rem;
 }
 
-.enderecocard{display: flex;
+.card{
 justify-content: center;
-align-items: center;}
+align-items: center;
+background-color: var(--cor_laranja);
+padding: 1rem;
+width: 20rem;}
+
 
 .cardinfo{margin-top: 20rem;}
 
-.visite{display: flex;
+.visite{margin: 4rem;
 justify-content: center;
-position: absolute;}
+}
 
-.tele{margin-top: 1orem;}
+.tele{margin-top: 1rem;
+justify-content: flex-start;
+margin-top: 8rem;
+font-size: 2rem;}
+
+.botao{
+background-color: var(--cor_vermelho);
+padding: 2rem;
+
+}
+
+.recomendados{display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;}
+
+.recomendados img{height: 15rem;}
