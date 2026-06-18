@@ -30,11 +30,5 @@ var G={
 
 G.F.loadScript("produtos",true,function(){
   switch(document.querySelector("title").innerText){
-    case"Produto":
-      G.F.loadScript("tela_produto",true,function(){})
-      break
-    case"Catálogo":
-      G.F.loadScript("catalogo",true,function(){})
-      break
   }
 })

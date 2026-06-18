@@ -9,17 +9,25 @@ flex-direction: row;
 
 .dogbanner{
     justify-content: flex-end;
-    position: absolute;
     width:11rem;
-    margin-left: 60rem;
-    margin-bottom: 2rem;
+    max-width: 100%;
+}
+.dogbanner_pai{
+    display: block;
+    margin-left: auto;
 }
 
 .banner{
+    margin-right: 0px;
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+}
+.banner_coluna1{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    margin-left: 7rem;
 }
 
 .produtosrecomendados1{
@@ -29,11 +37,12 @@ flex-direction: row;
 }
 
 .card{
-justify-content: center;
-align-items: center;
-background-color: var(--cor_laranja);
-padding: 1rem;
-width: 20rem;}
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor_laranja);
+    padding: 1rem;
+    width: 20rem;
+}
 
 
 .cardinfo{margin-top: 20rem;}
@@ -48,14 +57,18 @@ margin-top: 8rem;
 font-size: 2rem;}
 
 .botao{
-background-color: var(--cor_vermelho);
-padding: 2rem;
-
+    background-color: var(--cor_vermelho);
+    padding: 1rem;
+    font-size:2rem;
+    color:var(--cor_creme);
+    border-radius: .5rem;
+    border-width: 0rem;
 }
 
 .recomendados{display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: row;}
+flex-direction: row;
+width:80vw}
 
 .recomendados img{height: 15rem;}

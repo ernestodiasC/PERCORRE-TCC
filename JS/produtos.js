@@ -71,4 +71,3 @@ new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_fr
 new Racao("Whiskas - Frango","whiskas_frango_900g.png","27.80","900g","Gato",["Frango"],"")
 new Racao("Royal Canin - Sensible - Gatos Adultos","royal_canin_sensible_gatos_adultos.png","99.99","1,5kg","Gato",["Sensible"],"Adulto")
 new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"],"Adulto")
-console.log(G.PRODUTOS)
