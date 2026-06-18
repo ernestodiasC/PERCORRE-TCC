@@ -22,6 +22,10 @@ var G={
       }
     }
   },
+  CATG:{
+    Racao_Cachorro:[],
+    Racao_Gato:[],
+  }
 }
 
 G.F.loadScript("produtos",true,function(){
@@ -34,6 +38,3 @@ G.F.loadScript("produtos",true,function(){
       break
   }
 })
-G.F.loadScript_base("https://code.jquery.com/jquery-1.11.0.min.js",true,function(){})
-G.F.loadScript_base("https://code.jquery.com/jquery-migrate-1.2.1.min.js",true,function(){})
-G.F.loadScript_base("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js",true,function(){})
