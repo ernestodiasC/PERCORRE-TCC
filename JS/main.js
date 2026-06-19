@@ -29,6 +29,9 @@ var G={
 }
 
 G.F.loadScript("produtos",true,function(){
+  G.F.loadScript_base("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",true,function(){
+    G.F.loadScript_base("./JS/carrossel.js",true,function(){})
+  })
   switch(document.querySelector("title").innerText){
   }
 })

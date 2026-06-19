@@ -1,66 +1,59 @@
 body {
-  background:
-    url("./src/inicio/bannernovo.png"),
-   linear-gradient(
-  to bottom,
-  var(--cor_creme) 0%,
-  var(--cor_creme) 35%,
-  var(--cor_laranja) 35%,
-  var(--cor_laranja) 80%,
-  var(--cor_marrom) 80%,
-  var(--cor_marrom) 100%
-);
+    background:
+        url("./src/inicio/bannernovo.png");
+    width: 100vw;
 
-  background-size: auto 110vh, 100% 100%;
-  background-repeat: no-repeat;
+    background-size: auto 120vw;
+    background-repeat: no-repeat;
+    margin:0px;
 
-  display: flex;
-  flex-direction: row;
-  margin: 1rem;
-  padding: 1rem 1rem 43em 0rem;
-  flex-wrap: wrap;
-  transform: translateY(-4rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:var(--cor_creme);
 }
 
 .container{
-    width: 100%;
+    width: 100vw;
 }
 
 .dogbanner{
     display: block;
-  margin-left: 92.6rem;
-  margin-bottom: 5rem;
     width: 11rem;
-    max-width: 100%;
-    transform: translateX(-30rem);
+    /*transform: translateX(-30rem);*/
     justify-content: flex-end;
-    position: absolute;
 }
 
-.logo{width: 10rem;
-display: inline;
-margin-left: 47%;
-margin-top: 3%;
-transform: translateY(-10%);}
+.logo{
+    width: 10rem;
+    display: block;
+    margin-top: 1rem;
+    /*transform: translateY(-10%);*/
+    width: 30%;
+}
+.banner_logo{
+    display: inline;
+    justify-content: center;
+}
 
-
-.logo{width: 30%;
-justify-content: center;}
-
-.banner{transform: translateX(-10%);}
+.banner_inferior{
+    /*margin-left: 7rem;*/
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    
+}
+.banner{
+    width:100%;
+}
 
 .banner_coluna1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 25rem;
-    margin-bottom: rem;
-     transform: translateX(-25%);
-    
+    margin-left: 15%;
+    color: white;
 }
-
-.banner_coluna1 h2{color: white;}
-
 
 .carrossel {
   width: 90%;
@@ -78,8 +71,16 @@ justify-content: center;}
 .produtosrecomendados1{
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-    transform: translateY(15rem);
+    margin-top: 18rem;
+
+}
+
+.area_visitar{
+    background-color:var(--cor_laranja);
+    text-align: center;
+}
+.area_sobrenos{
+    background-color:var(--cor_marrom);
 }
 
 .recomendados{
@@ -101,6 +102,7 @@ justify-content: center;}
     font-family: 'art nuevo';
     color: var(--cor_laranja);
     transform: translateY(10rem);
+    width:90%;
 }
 
 .card{
@@ -108,13 +110,11 @@ justify-content: center;}
     flex-direction: column;
     align-items: center;
     background-color: var(--cor_creme);
-    padding: 20rem;
+    padding: 5rem;
     padding-top: 1rem;
-    padding-bottom: 10rem;
-    width: 20rem;
-    margin: 2rem auto;
+    padding-bottom: 2rem;
+    width: 95vw;
     border-radius: 10%;
-    transform: translateY(35rem);
 }
 
 .card img{width: 35rem;
@@ -137,7 +137,9 @@ border-radius: 10%;}
     font-family: 'art nuevo';
     position: relative;
     color: white;
-    transform: translateY(25rem);
+    width:90%;
+    transform: translateY(5rem);
+
 }
 
 .tele{
@@ -174,10 +176,11 @@ color: var(--cor_cafe);
 
 .sobre{background-color: var(--cor_creme);
 border: 10% solid var(--cor_laranja);
-border-radius: 10px;
-padding-left: 3%;
-padding-bottom: 3%;
-transform: translateY(45rem);
+border-radius: .5rem;
+width:90vw;
+margin-bottom: 5rem;
+margin-top:3rem;
+text-align: center;
 }
 
 .avaliacaoclientes img{width: 45%;}
@@ -186,35 +189,13 @@ transform: translateY(45rem);
 display: flex;
 justify-content: space-evenly;
 flex-direction: row;
-gap: 2rem;
-transform: translateY(45rem);}
+gap: 2rem;}
 
-.avaliacaoclientes1{background-color: var(--cor_creme);
+.avaliacaoclientes1, .avaliacaoclientes2, .avaliacaoclientes3{background-color: var(--cor_creme);
 border: 2px solid var(--cor_laranja);
 border-radius: 10px;
 padding-left: 2rem;
-width: 25rem;
-height: 20rem;
-font-size: 1.5rem;
-font-family: 'chau';
-color: var(--cor_cafe);}
-
-.avaliacaoclientes2{background-color: var(--cor_creme);
-border: 2px solid var(--cor_laranja);
-border-radius: 10px;
-padding-left: 2rem;
-width: 25rem;
-height: 20rem;
-font-size: 1.5rem;
-font-family: 'chau';
-color: var(--cor_cafe);}
-
-
-.avaliacaoclientes3{background-color: var(--cor_creme);
-border: 2px solid var(--cor_laranja);
-border-radius: 10px;
-padding-left: 2rem;
-width: 25rem;
+width: 20rem;
 height: 20rem;
 font-size: 1.5rem;
 font-family: 'chau';

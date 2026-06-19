@@ -1,10 +1,14 @@
-:root{--cor_amarelo:#ffcc00;
---cor_laranja:#ff9900;
---cor_marrom:#74513d;
---cor_cafe: #201610;
---cor_creme: #eecd8f;
---cor_vermelho:#e7121f;
-font-size: 20px;}
+:root{
+  --cor_amarelo:#ffcc00;
+  --cor_laranja:#ff9900;
+  --cor_marrom:#74513d;
+  --cor_cafe: #201610;
+  --cor_creme: #eecd8f;
+  --cor_vermelho:#e7121f;
+  font-size: 20px;
+  margin:0px;
+  padding:0px;
+}
 
 @font-face{
     font-family:'art nuevo';
