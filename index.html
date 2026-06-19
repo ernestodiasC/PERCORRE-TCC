@@ -8,26 +8,23 @@
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./inicio.css">
-   
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./JS/carrossel.js"></script>
+
 </head>
 
 <body>
     <div class="container">
 
-        <nav class="menu">
-
-            <a href="catalogo.html">catalogo</a>
-
-        </nav>
-
         <div class="banner">
 
+    <img class="logo" src="./src/inicio/bicharda.png" alt="">
 
             <div class="banner_coluna1">
-               <h6><img class="logo" src="./src/inicio/bicharda.png" alt=""></h6>
-
+    
                 <h2 class="tele">a tele-entrega <br>mais rapida </h2>
 
                 <a class="botaobanner" href="catalogo.html">
@@ -47,17 +44,44 @@
 
  <h2 id="recomendadostxt">produtos recomendados</h2>
 
-        <div class="produtosrecomendados1">
+  <div class="produtosrecomendados1">
 
-            <a href="./catalogo.html">
-                <div class="recomendados">
-                    <img id="" src="./src/produtos/magnus_adultos_carne.png" alt="">
-                    <img src="./src/produtos/origens_adultos_carne.png" alt="">
-                    <img src="./src/produtos/pedigree_adulto_carne_frango_e_cereais_10,1kg.png" alt="">
-                    <img src="./src/produtos/pedigree_adulto_carne_frango_e_cereais_20kg.png" alt="">
-                </div>
-            </a>
+  <div class="swiper carrossel">
+
+    <div class="swiper-wrapper">
+
+      <a href="./catalogo.html" class="swiper-slide">
+        <div class="recomendados">
+          <img src="./src/produtos/magnus_adultos_carne.png" alt="">
         </div>
+      </a>
+
+      <a href="./catalogo.html" class="swiper-slide">
+        <div class="recomendados">
+          <img src="./src/produtos/origens_adultos_carne.png" alt="">
+        </div>
+      </a>
+
+      <a href="./catalogo.html" class="swiper-slide">
+        <div class="recomendados">
+          <img src="./src/produtos/pedigree_adulto_carne_frango_e_cereais_10,1kg.png" alt="">
+        </div>
+      </a>
+
+      <a href="./catalogo.html" class="swiper-slide">
+        <div class="recomendados">
+          <img src="./src/produtos/pedigree_adulto_carne_frango_e_cereais_20kg.png" alt="">
+        </div>
+      </a>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+
+</div>
 
 
 

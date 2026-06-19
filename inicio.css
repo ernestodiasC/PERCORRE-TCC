@@ -28,7 +28,7 @@ body {
 
 .dogbanner{
     display: block;
-  margin-left: 97.1rem;
+  margin-left: 92.6rem;
   margin-bottom: 5rem;
     width: 11rem;
     max-width: 100%;
@@ -37,21 +37,43 @@ body {
     position: absolute;
 }
 
-h6{text-align: center;
-  transform: translateX(-10rem);}
+.logo{width: 10rem;
+display: inline;
+margin-left: 47%;
+margin-top: 3%;
+transform: translateY(-10%);}
 
 
 .logo{width: 30%;
 justify-content: center;}
 
+.banner{transform: translateX(-10%);}
 
 .banner_coluna1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 25rem;
+    margin-bottom: rem;
+     transform: translateX(-25%);
+    
 }
 
 .banner_coluna1 h2{color: white;}
+
+
+.carrossel {
+  width: 90%;
+  overflow: hidden;
+}
+
+.recomendados img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+
 
 .produtosrecomendados1{
     display: flex;
