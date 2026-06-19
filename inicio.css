@@ -1,74 +1,182 @@
-body{background-image: url("./src/inicio/bannernovo.png");
+body {
+  background:
+    url("./src/inicio/bannernovo.png"),
+    linear-gradient(
+      to bottom,
+      var(--cor_creme) 0%,
+      var(--cor_creme) 33.33%,
+      var(--cor_laranja) 33.33%,
+      var(--cor_laranja) 66.66%,
+      var(--cor_marrom) 66.66%,
+      var(--cor_marrom) 100%
+    );
 
-background-size: auto 110vh;
-background-repeat: no-repeat;
-display: flex;
-flex-direction: row;
+  background-size: auto 110vh, 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  transform: translateY(-4rem);
 }
 
+.container{
+    width: 100%;
+}
 
 .dogbanner{
-    justify-content: flex-end;
-    width:11rem;
+  margin-left: 80%;
+    width: 11rem;
     max-width: 100%;
+    position: absolute;
 }
-.dogbanner_pai{
-    display: block;
-    margin-left: auto;
-}
+
+
 
 .banner{
-    margin-right: 0px;
-    margin-left: 7rem;
     display: flex;
     flex-direction: row;
-    width:100vw;
-}
-.banner_coluna1{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3rem;
+    width: 100%;
 }
 
+.banner_coluna1{
+}
+
+.banner_coluna1 h2{color: white;}
+
 .produtosrecomendados1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.recomendados{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 28rem;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+#recomendadostxt{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: 'art nuevo';
+    color: var(--cor_vermelho);
 }
 
 .card{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: var(--cor_laranja);
-    padding: 1rem;
+    background-color: var(--cor_creme);
+    padding: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
     width: 20rem;
+    margin: 2rem auto;
+    border-radius: 10%;
 }
 
+.card img{width: 35rem;
+border: 2px solid var(--cor_marrom);
+border-radius: 10%;}
 
-.cardinfo{margin-top: 20rem;}
-
-.visite{margin: 4rem;
-justify-content: center;
+.cardinfo{
+    margin-top: 1rem;
+    color: var(--cor_cafe);
 }
 
-.tele{margin-top: 1rem;
-justify-content: flex-start;
-margin-top: 8rem;
-font-size: 2rem;}
+.visite{
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-family: 'art nuevo';
+    position: relative;
+    color: var(--cor_vermelho);
+}
+
+.tele{
+    margin-top: 8rem;
+    font-size: 3rem;
+    font-family: 'art nuevo';
+}
 
 .botao{
     background-color: var(--cor_vermelho);
     padding: 1rem;
-    font-size:2rem;
-    color:var(--cor_creme);
+    font-size: 2rem;
+    font-family: 'chau';
+    color: white;
     border-radius: .5rem;
     border-width: 0rem;
+    cursor: pointer;
 }
 
-.recomendados{display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-width:80vw}
+.recomendados img{
+    height: 15rem;
+    max-width: 100%;
+}
 
-.recomendados img{height: 15rem;}
+.sobrenos{font-family: 'art nuevo';
+font-size:2rem;
+padding-left: 2rem;
+color: var(--cor_cafe);}
+
+.sobre p{font-family: 'chau';
+justify-content: center;
+color: var(--cor_cafe);
+}
+
+.sobre{background-color: var(--cor_creme);
+border: 10% solid var(--cor_laranja);
+border-radius: 10px;
+padding-left: 3%;
+padding-bottom: 3%;
+}
+
+.avaliacaoclientes img{width: 45%;}
+
+.avaliacaoclientes{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+gap: 2rem;}
+
+.avaliacaoclientes1{background-color: var(--cor_creme);
+border: 2px solid var(--cor_laranja);
+border-radius: 10px;
+padding-left: 2rem;
+width: 25rem;
+height: 20rem;
+font-size: 1.5rem;
+font-family: 'chau';
+color: var(--cor_cafe);}
+
+.avaliacaoclientes2{background-color: var(--cor_creme);
+border: 2px solid var(--cor_laranja);
+border-radius: 10px;
+padding-left: 2rem;
+width: 25rem;
+height: 20rem;
+font-size: 1.5rem;
+font-family: 'chau';
+color: var(--cor_cafe);}
+
+
+.avaliacaoclientes3{background-color: var(--cor_creme);
+border: 2px solid var(--cor_laranja);
+border-radius: 10px;
+padding-left: 2rem;
+width: 25rem;
+height: 20rem;
+font-size: 1.5rem;
+font-family: 'chau';
+color: var(--cor_cafe);}
