@@ -25,7 +25,7 @@ body {
 }
 .dogbanner{
     display: inline;
-    width: 11rem;
+    width: max(11rem,15vw);
     justify-content: flex-end;
 }
 
