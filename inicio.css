@@ -64,6 +64,7 @@ body {
   width: 100%;
   height: 250px;
   object-fit: contain;
+  background-color: var(--cor_marrom);
 }
 
 
@@ -78,9 +79,23 @@ body {
 .area_visitar{
     background-color:var(--cor_laranja);
     text-align: center;
+    place-items: center;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-left:0rem;
+    padding-right:0rem;
+    margin:0rem;
 }
 .area_sobrenos{
     background-color:var(--cor_marrom);
+    place-items: center;
+    text-align: center;
+    width:100vw;
+    padding:2rem;
+    padding-bottom:2rem;
+    padding-left:0rem;
+    padding-right:0rem;
+    margin:0rem;
 }
 
 .recomendados{
@@ -114,7 +129,8 @@ body {
     padding-top: 1rem;
     padding-bottom: 2rem;
     width: 95vw;
-    border-radius: 10%;
+    border: .15rem solid var(--cor_marrom);
+    border-radius: .5rem;
 }
 
 .card img{width: 35rem;
@@ -132,13 +148,13 @@ border-radius: 10%;}
     margin-top: 10rem;
     font-size: 2rem;
     background-color: var(--cor_marrom);
-    border: 1px solid var(--cor_vermelho);
+    border: .25rem solid var(--cor_vermelho);
     border-radius: 1rem;
     font-family: 'art nuevo';
     position: relative;
     color: white;
     width:90%;
-    transform: translateY(5rem);
+    /*transform: translateY(5rem);*/
 
 }
 
@@ -165,38 +181,50 @@ border-radius: 10%;}
 }
 
 .sobrenos{font-family: 'art nuevo';
-font-size:2rem;
+font-size:2.5rem;
 padding-left: 2rem;
 color: var(--cor_cafe);}
 
-.sobre p{font-family: 'chau';
-justify-content: center;
-color: var(--cor_cafe);
+.sobre p{
+    font-family: 'chau';
+    justify-content: center;
+    color: var(--cor_cafe);
+    font-size:1.5rem;
 }
 
-.sobre{background-color: var(--cor_creme);
-border: 10% solid var(--cor_laranja);
-border-radius: .5rem;
-width:90vw;
-margin-bottom: 5rem;
-margin-top:3rem;
-text-align: center;
+.sobre{
+    background-color: var(--cor_creme);
+    border-radius: .5rem;
+    width:90vw;
+    margin-bottom: 5rem;
+    margin-top:3rem;
+    text-align: center;
+    border: .15rem solid var(--cor_laranja);
+    border-radius: .5rem;
 }
 
-.avaliacaoclientes img{width: 45%;}
+.avaliacaoclientes_area img{width: 45%;}
 
-.avaliacaoclientes{
+.avaliacaoclientes_area{
 display: flex;
 justify-content: space-evenly;
 flex-direction: row;
-gap: 2rem;}
+gap: 2.5vw;
+width:100vw;
+}
 
-.avaliacaoclientes1, .avaliacaoclientes2, .avaliacaoclientes3{background-color: var(--cor_creme);
-border: 2px solid var(--cor_laranja);
-border-radius: 10px;
-padding-left: 2rem;
-width: 20rem;
-height: 20rem;
-font-size: 1.5rem;
-font-family: 'chau';
-color: var(--cor_cafe);}
+.avaliacaoclientes{
+    background-color: var(--cor_creme);
+    border: .15rem solid var(--cor_laranja);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 30vw;
+    height: 20rem;
+    font-size: 1.5rem;
+    font-family: 'chau';
+    color: var(--cor_cafe);
+}
+.avaliacaoclientes .nome{
+    margin:0rem;
+    padding:1rem;
+}
