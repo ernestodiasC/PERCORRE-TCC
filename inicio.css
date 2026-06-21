@@ -1,9 +1,9 @@
 body {
     background:
         url("./src/inicio/bannernovo.png");
-    width: 100vw;
+    /*width: 100%;*/
 
-    background-size: auto 120vw;
+    background-size: auto max(890px,calc(100vw / 1.7));
     background-repeat: no-repeat;
     margin:0px;
 
@@ -14,13 +14,18 @@ body {
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
 }
 
-.dogbanner{
+.dogbanner_area{
     display: block;
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: right;
+}
+.dogbanner{
+    display: inline;
     width: 11rem;
-    /*transform: translateX(-30rem);*/
     justify-content: flex-end;
 }
 
@@ -40,11 +45,12 @@ body {
     /*margin-left: 7rem;*/
     display: flex;
     flex-direction: row;
-    width:100vw;
+    width: 100%;
     
 }
 .banner{
     width:100%;
+    padding-bottom:10rem;
 }
 
 .banner_coluna1{
@@ -64,7 +70,7 @@ body {
   width: 100%;
   height: 250px;
   object-fit: contain;
-  background-color: var(--cor_marrom);
+  /*background-color: var(--cor_marrom);*/
 }
 
 
@@ -77,7 +83,7 @@ body {
 }
 
 .area_visitar{
-    background-color:var(--cor_laranja);
+    /*background-color:var(--cor_laranja);*/
     text-align: center;
     place-items: center;
     padding-top:2rem;
@@ -90,12 +96,16 @@ body {
     background-color:var(--cor_marrom);
     place-items: center;
     text-align: center;
-    width:100vw;
+    width: 100%;
     padding:2rem;
     padding-bottom:2rem;
     padding-left:0rem;
     padding-right:0rem;
     margin:0rem;
+}
+.recomendadostxt_area{
+    place-items: center;
+    text-align: center;
 }
 
 .recomendados{
@@ -116,7 +126,7 @@ body {
     border-radius: 1rem;
     font-family: 'art nuevo';
     color: var(--cor_laranja);
-    transform: translateY(10rem);
+    /*transform: translateY(10rem);*/
     width:90%;
 }
 
@@ -133,9 +143,11 @@ body {
     border-radius: .5rem;
 }
 
-.card img{width: 35rem;
-border: 2px solid var(--cor_marrom);
-border-radius: 10%;}
+.card img{
+    width: 35rem;
+    border: 2px solid var(--cor_marrom);
+    border-radius: 10%;
+}
 
 .cardinfo{
     margin-top: 1rem;
@@ -174,16 +186,22 @@ border-radius: 10%;}
     border-width: 0rem;
     cursor: pointer;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 
 .recomendados img{
-    height: 15rem;
+    height: 23rem;
     max-width: 100%;
 }
 
-.sobrenos{font-family: 'art nuevo';
-font-size:2.5rem;
-padding-left: 2rem;
-color: var(--cor_cafe);}
+.sobrenos{
+    font-family: 'art nuevo';
+    font-size:2.5rem;
+    padding-left: 2rem;
+    color: var(--cor_cafe);
+}
 
 .sobre p{
     font-family: 'chau';
@@ -203,14 +221,16 @@ color: var(--cor_cafe);}
     border-radius: .5rem;
 }
 
-.avaliacaoclientes_area img{width: 45%;}
+.avaliacaoclientes_area img{
+    width: 45%;
+}
 
 .avaliacaoclientes_area{
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-gap: 2.5vw;
-width:100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 2.5vw;
+    width: 100%;
 }
 
 .avaliacaoclientes{

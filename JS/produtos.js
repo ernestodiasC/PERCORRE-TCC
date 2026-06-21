@@ -63,7 +63,7 @@ G.F.get_produto_by_id=function(id){
 
 // RAÇÕES
 // Caes
-new Racao("Golden Especial - Frango e Carne - Adulto","racao_golden_special_frango_e_carne_caes_adultos_15kg.jpg","129.99","15kg","Cachorro",["Frango","Carne"],"Adulto")
+new Racao("Golden Especial - Frango e Carne - Adulto","racao_golden_special_frango_e_carne_caes_adultos_15kg.png","129.99","15kg","Cachorro",["Frango","Carne"],"Adulto")
 new Racao("PremieR - Carne - Adulto - Raças Grandes","premier_racas_grandes_adultos_15kg.png","229.80","15kg","Cachorro",["Carne"],"Adulto")
 new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_frango_e_cereais_10,1kg.png","179.99","10.1kg","Cachorro",["Carne","Frango","Cereais"])
 
