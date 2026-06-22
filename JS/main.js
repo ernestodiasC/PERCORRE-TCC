@@ -30,6 +30,10 @@ var G={
 
 G.F.loadScript("produtos",true,function(){
   G.F.loadScript_base("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",true,function(){
-    G.F.loadScript_base("./JS/carrossel.js",true,function(){})
+    if(document.getElementById('body_inicio')!=null){
+      G.F.loadScript("inicio",true,function(){})
+    }else{
+      G.F.loadScript("catalogo",true,function(){})
+    }
   })
 })

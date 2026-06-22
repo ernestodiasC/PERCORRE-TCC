@@ -29,4 +29,5 @@
 *{box-sizing: border-box;}
 
 body{
+  background-color:var(--cor_creme);
 }
