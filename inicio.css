@@ -1,6 +1,5 @@
 body {
-    background:
-        url("./src/inicio/bannernovo.png");
+    background: url("./src/inicio/bannernovo.png");
     /*width: 100%;*/
 
     background-size: auto max(890px,calc(100vw / 1.7));
@@ -31,13 +30,14 @@ body {
 
 .logo{
     width: 10rem;
-    display: block;
+    display: inline;
     margin-top: 1rem;
     /*transform: translateY(-10%);*/
-    width: 30%;
+    width: max(40%,15rem);
 }
 .banner_logo{
-    display: inline;
+    display: block;
+    text-align: center;
     justify-content: center;
 }
 
@@ -78,7 +78,7 @@ body {
 .produtosrecomendados1{
     display: flex;
     justify-content: center;
-    margin-top: 18rem;
+    margin-top: 5rem;
 
 }
 
@@ -120,14 +120,15 @@ body {
 #recomendadostxt{
     text-align: center;
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: var(--cor_marrom);
     border: 1px solid var(--cor_laranja);
     border-radius: 1rem;
     font-family: 'art nuevo';
     color: var(--cor_laranja);
     /*transform: translateY(10rem);*/
-    width:90%;
+    width: min(90%,40rem);
+    padding:.1rem;
 }
 
 .card{
@@ -238,6 +239,7 @@ a{
     border: .15rem solid var(--cor_laranja);
     border-radius: .5rem;
     padding: 1rem;
+    line-height: 1.3rem;
     width: 30vw;
     height: 20rem;
     font-size: 1.5rem;
