@@ -10,6 +10,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     background-color:var(--cor_creme);
+    font-family: 'chau';
 }
 
 .container{
@@ -241,7 +242,6 @@ a{
     padding: 1rem;
     line-height: 1.3rem;
     width: 30vw;
-    height: 20rem;
     font-size: 1.5rem;
     font-family: 'chau';
     color: var(--cor_cafe);

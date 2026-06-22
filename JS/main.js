@@ -25,15 +25,18 @@ var G={
   CATG:{
     Racao_Cachorro:[],
     Racao_Gato:[],
-  }
+  },
+  swiper_actives:[],
 }
 
 G.F.loadScript("produtos",true,function(){
   G.F.loadScript_base("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",true,function(){
-    if(document.getElementById('body_inicio')!=null){
-      G.F.loadScript("inicio",true,function(){})
-    }else{
-      G.F.loadScript("catalogo",true,function(){})
-    }
+    G.F.loadScript("swiper",true,function(){
+      if(document.getElementById('body_inicio')!=null){
+        G.F.loadScript("inicio",true,function(){})
+      }else{
+        G.F.loadScript("catalogo",true,function(){})
+      }
+    })
   })
 })

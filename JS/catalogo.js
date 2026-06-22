@@ -9,6 +9,7 @@ function adicionar_categoria(categ){
         div.append(img)
         img.style.width="10rem"
     }
+    G.F.setup_swiper(categ)
 }
 adicionar_categoria("Racao_Cachorro")
 adicionar_categoria("Racao_Gato")

@@ -5,7 +5,7 @@ class Produto{
         this.img=img
         this.preco=preco
         this.preco_number=Number(preco)
-        this.index=img
+        this.index=img+preco
 
         G.PRODUTOS[this.index]=this
     }
@@ -26,6 +26,7 @@ class Racao extends Produto{
         this.animal=animal
         this.sabores=sabores
         this.idade_animal=idade_animal
+        this.index+=peso+idade_animal
         G.CATG["Racao_"+this.animal].push(this)
     }
     get_categoria(){
@@ -63,13 +64,22 @@ G.F.get_produto_by_id=function(id){
 
 // RAÇÕES
 // Caes
-new Racao("Golden Especial - Frango e Carne - Adulto","racao_golden_special_frango_e_carne_caes_adultos_15kg.png","129.99","15kg","Cachorro",["Frango","Carne"],"Adulto")
+/*new Racao("Golden Especial - Frango e Carne - Adulto","racao_golden_special_frango_e_carne_caes_adultos_15kg.png","129.99","15kg","Cachorro",["Frango","Carne"],"Adulto")
 new Racao("PremieR - Carne - Adulto - Raças Grandes","premier_racas_grandes_adultos_15kg.png","229.80","15kg","Cachorro",["Carne"],"Adulto")
-new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_frango_e_cereais_10,1kg.png","179.99","10.1kg","Cachorro",["Carne","Frango","Cereais"])
+new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_frango_e_cereais_10,1kg.png","179.99","10.1kg","Cachorro",["Carne","Frango","Cereais"])*/
+new Racao("Fãmil Premium Tradicional","famil_premium_10kg.png","78","10kg","Cachorro",["Carne"],"Adulto")
+new Racao("Lupy Dog","lupy_dog_adultos_carne_frango.png","45 ","7kg","Cachorro",["Carne","Frango"],"Adulto")
+new Racao("Lupy Dog","lupy_dog_adultos_carne_frango.png","118","20kg","Cachorro",["Carne","Frango"],"Adulto")
+new Racao("Special Dog","special_dog_carne.png","144","20kg","Cachorro",["Carne"],"Adulto")
+new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","45","5kg","Cachorro",["Carne"],"Adulto")
+new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","70","10kg","Cachorro",["Carne"],"Adulto")
+new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","98","15kg","Cachorro",["Carne"],"Adulto")
+new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","150","25kg","Cachorro",["Carne"],"Adulto")
 
 // Gatos
-new Racao("Whiskas - Frango","whiskas_frango_900g.png","27.80","900g","Gato",["Frango"],"")
+/*new Racao("Whiskas - Frango","whiskas_frango_900g.png","27.80","900g","Gato",["Frango"],"")
 new Racao("Royal Canin - Sensible - Gatos Adultos","royal_canin_sensible_gatos_adultos.png","99.99","1,5kg","Gato",["Sensible"],"Adulto")
-new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"],"Adulto")
+new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"],"Adulto")*/
+new Racao("Fãmil Premium","famil_gatos_castrados_10kg.png","130","10kg","Gato",["Salmão","Arroz"],"Castrados")
 
 console.log(G.CATG)
