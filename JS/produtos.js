@@ -10,7 +10,7 @@ class Produto{
         G.PRODUTOS[this.index]=this
     }
     get_image(){
-        return "./scr/produtos/"+this.img
+        return "./src/produtos/"+this.img
     }
     get_link_individual(){
         return "./tela_produto.html?id="+this.index
