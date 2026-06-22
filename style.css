@@ -11,13 +11,13 @@
 }
 
 @font-face{
-    font-family:'art nuevo';
-    src: url(./src/FontsFree-Net-Art-nuvo.ttf) format('truetype');
+  font-family:'art nuevo';
+  src: url(./src/FontsFree-Net-Art-nuvo.ttf) format('truetype');
 }
 
 @font-face{
-    font-family:'chau';
-    src: url(./src/ChauPhilomeneOne-Regular.ttf) format('truetype');
+  font-family:'chau';
+  src: url(./src/ChauPhilomeneOne-Regular.ttf) format('truetype');
 }
 
 
@@ -27,15 +27,3 @@
 
 
 *{box-sizing: border-box;}
-
-body{
-  background: linear-gradient(
-    to bottom,
-    var(--cor_creme) 0%,
-    var(--cor_creme) 33.33%,
-    var(--cor_laranja) 33.33%,
-    var(--cor_laranja) 66.66%,
-    var(--cor_marrom) 66.66%,
-    var(--cor_marrom) 100%
-  );
-}
