@@ -7,4 +7,5 @@ for(var i=1,a=[
 ];i<5;i++){
     let idx=document.getElementById("Racao_Cachorro"+String(i))
     idx.src=a[i-1]
+    idx.alt="Ração Recomendada Número "+String(i)
 }
