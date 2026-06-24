@@ -1,10 +1,14 @@
 :root{
-  --cor_amarelo:#ffcc00;
+  --cor_amarelo:#F4AE52;
   --cor_laranja:#ff9900;
-  --cor_marrom:#74513d;
+  --cor_laranja2:#FE7F2D;
+  --cor_laranja3:#FFAE56;
+  --cor_marrom:#4b3528;
   --cor_cafe: #201610;
-  --cor_creme: #eecd8f;
+  --cor_creme: #FDEB9E;
   --cor_vermelho:#e7121f;
+  --cor_claro: #f1ecbc;
+  --cor_bege: #FFF2DB;
   font-size: 20px;
   margin:0px;
   padding:0px;
