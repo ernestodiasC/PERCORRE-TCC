@@ -74,6 +74,9 @@ body {
     color: white;
 }
 
+
+
+
 .carrossel {
   width: 90%;
   overflow: hidden;
@@ -144,7 +147,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--cor_bege);
+    background-color: var(--cor_claro);
     padding: 5rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -176,14 +179,14 @@ body {
     border-radius: 1rem;
     font-family: 'art nuevo';
     position: relative;
-    color: var(--cor_bege);
+    color: var(--cor_claro);
     width: min(90%,40rem);
     /*transform: translateY(5rem);*/
 
 }
 
 .tele{
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-size: 3rem;
     font-family: 'art nuevo';
 }
@@ -226,7 +229,7 @@ a{
 }
 
 .sobre{
-    background-color: var(--cor_bege);
+    background-color: var(--cor_claro);
     border-radius: .5rem;
     width:90vw;
     margin-bottom: 5rem;
@@ -249,8 +252,8 @@ a{
 }
 
 .avaliacaoclientes{
-    background-color: var(--cor_bege);
-    border: .15rem solid var(--cor_laranja);
+    background-color: var(--cor_claro);
+    border: .15rem solid var(--cor_marrom);
     border-radius: .5rem;
     padding: 1rem;
     line-height: 1.3rem;
@@ -265,5 +268,5 @@ a{
 }
 
 footer{background-color: var(--cor_marrom);
-color: var(--cor_bege);
+color: var(--cor_claro);
 text-align: center;}
