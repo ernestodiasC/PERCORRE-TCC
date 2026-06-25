@@ -33,4 +33,9 @@ h2{
 .categoria{
   width: 90%;
   overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.swiper-slide img{
+    width: 10rem;
 }
