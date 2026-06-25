@@ -35,7 +35,10 @@ body{
   overflow-x: hidden;
 }
 
-nav{background-color: var(--cor_marrom);
+nav{
+  background-image: url("./src/paws_background_generic.png");
+  background-color: var(--cor_marrom);
+  background-size: auto ;
 color: var(--cor_claro);
 width: 100%;
 padding-left: 1rem;
