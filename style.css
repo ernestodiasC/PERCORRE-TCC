@@ -7,7 +7,7 @@
   --cor_cafe: #201610;
   --cor_creme: #FDEB9E;
   --cor_vermelho:#e7121f;
-  --cor_claro: #f1ecbc;
+  --cor_claro: #f1dabc;
   --cor_bege: #FFF2DB;
   font-size: 20px;
   margin:0px;
@@ -24,7 +24,6 @@
   src: url(./src/ChauPhilomeneOne-Regular.ttf) format('truetype');
 }
 
-
 *,
 *::before,
 *::after{box-sizing: border-box;}
@@ -34,4 +33,5 @@
 
 body{
   background-color:var(--cor_creme);
+  overflow-x: hidden;
 }

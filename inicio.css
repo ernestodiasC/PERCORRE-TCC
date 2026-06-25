@@ -3,6 +3,13 @@
     background-repeat: no-repeat;
 }
 
+.tipo_divisa_site{
+    width: auto;
+    height: max(120px,calc(12vw));
+    margin:0px;
+    padding:0px;
+}
+
 body {
     
     background: url("./src/inicio/bannernovo.png");
@@ -92,10 +99,8 @@ body {
     background-color:var(--cor_laranja3);
     text-align: center;
     place-items: center;
-    padding-top:2rem;
+    padding:0rem;
     padding-bottom:2rem;
-    padding-left:0rem;
-    padding-right:0rem;
     margin:0rem;
 }
 .area_sobrenos{
@@ -103,10 +108,8 @@ body {
     place-items: center;
     text-align: center;
     width: 100%;
-    padding:2rem;
+    padding:0rem;
     padding-bottom:2rem;
-    padding-left:0rem;
-    padding-right:0rem;
     margin:0rem;
 }
 .recomendadostxt_area{
@@ -154,6 +157,8 @@ body {
     width: min(35rem,80vw);
     border: 2px solid var(--cor_marrom);
     border-radius: 3rem;
+    pointer-events: none;
+    user-select: none;
 }
 
 .cardinfo{
@@ -165,14 +170,14 @@ body {
 .visite{
     text-align: center;
     margin-top: 10rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: var(--cor_marrom);
-    border: .25rem solid var(--cor_vermelho);
+    border: 3px solid var(--cor_vermelho);
     border-radius: 1rem;
     font-family: 'art nuevo';
     position: relative;
     color: var(--cor_bege);
-    width:90%;
+    width: min(90%,40rem);
     /*transform: translateY(5rem);*/
 
 }
@@ -201,6 +206,8 @@ a{
 .recomendados img{
     height: 23rem;
     max-width: 100%;
+    pointer-events: none;
+    user-select: none;
 }
 
 .sobrenos{
@@ -209,6 +216,7 @@ a{
     padding-left: 2rem;
     color: var(--cor_marrom);
 }
+
 
 .sobre p{
     font-family: 'chau';
@@ -224,7 +232,7 @@ a{
     margin-bottom: 5rem;
     margin-top:3rem;
     text-align: center;
-    border: .15rem solid var(--cor_laranja);
+    border: .15rem solid var(--cor_marrom);
     border-radius: .5rem;
 }
 
@@ -255,3 +263,7 @@ a{
     margin:0rem;
     padding:1rem;
 }
+
+footer{background-color: var(--cor_marrom);
+color: var(--cor_bege);
+text-align: center;}
