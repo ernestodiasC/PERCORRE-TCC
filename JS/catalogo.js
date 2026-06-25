@@ -3,13 +3,18 @@ function adicionar_categoria(categ){
     console.log(categ+"_swiper-wrapper")
     let div=document.getElementById(categ+"_swiper-wrapper")
     for(var i=0;i<categA.length;i++){
-        let img=document.createElement('img')
+        let img=document.createElement('a')
         img.className="swiper-slide"
-        img.src=categA[i].get_image()
-        img.alt=categA[i].nome
+        /*img.src=categA[i].get_image()
+        img.alt=categA[i].nome*/
         div.append(img)
-        img.style.height="20rem"
-        img.style.width="auto"
+        let img2=document.createElement('img')
+        img2.className=""
+        img2.src=categA[i].get_image()
+        img2.alt=categA[i].nome
+        img.append(img2)
+        /*img.style.height="20rem"
+        img.style.width="auto"*/
     }
     G.F.setup_swiper("."+categ)
 }
