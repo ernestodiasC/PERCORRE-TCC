@@ -10,6 +10,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     background-color:var(--cor_creme);
+
+    font-family: 'chau';
 }
 
 .container{

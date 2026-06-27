@@ -201,16 +201,10 @@ body {
     border-width: 0rem;
     cursor: pointer;
 }
-a{
-    color: white;
-    text-decoration: none;
-}
 
 .recomendados img{
     height: 23rem;
     max-width: 100%;
-    pointer-events: none;
-    user-select: none;
 }
 
 .sobrenos{

@@ -36,14 +36,23 @@ body{
 }
 
 nav{
-  background-image: url("./src/paws_background_generic.png");
+  background-image: url("./src/paws_background_generic_bem_transparent.png");
   background-color: var(--cor_marrom);
   background-size: auto ;
-color: var(--cor_claro);
-width: 100%;
-padding-left: 1rem;
-border-radius: 0rem 0rem 1rem 1rem ;
-font-size: 1.5rem;
-display: flex;
-justify-content: flex-start;
-gap: 2rem;}
+  color: var(--cor_claro);
+  width: 100%;
+  padding-left: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem ;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+  pointer-events: none;
+  user-select: none;
+}
