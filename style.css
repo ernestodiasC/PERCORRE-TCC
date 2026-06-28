@@ -49,10 +49,13 @@ nav{
   gap: 2rem;
 }
 a{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 img{
   pointer-events: none;
+  user-select: none;
+}
+.gproduto{
   user-select: none;
 }

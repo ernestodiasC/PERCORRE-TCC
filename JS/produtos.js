@@ -5,9 +5,7 @@ class Produto{
         this.img=img
         this.preco=preco
         this.preco_number=Number(preco)
-        this.index=img+preco
-
-        G.PRODUTOS[this.index]=this
+        G.PRODTUDOS_ARRAY.push(this)
     }
     get_image(){
         return "./src/produtos/"+this.img
@@ -17,6 +15,19 @@ class Produto{
     }
     get_categoria(){
         return "Geral"
+    }
+    get_div(){
+        return `
+        <div class="gproduto" id=${this.index}>
+        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+        <div class="gproduto_info">
+            <p class="gproduto_preco">${this.preco} R$</p>
+        </div>
+        </div>
+        `
+    }
+    get_id(){
+        return this.img+this.preco
     }
 }
 class Racao extends Produto{
@@ -29,8 +40,22 @@ class Racao extends Produto{
         this.index+=peso+idade_animal
         G.CATG["Racao_"+this.animal].push(this)
     }
+    get_id(){
+        return super.get_id()+this.peso+this.idade_animal
+    }
     get_categoria(){
         return "Racao_"+this.animal
+    }
+    get_div(){
+        return `
+        <div class="gproduto" id=${this.index}>
+        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+        <div class="gproduto_info">
+            <p class="gproduto_preco">${this.preco}R$</p>
+            <p class="gproduto_peso">${this.peso}</p>
+        </div>
+        </div>
+        `
     }
 }
 class Tulha extends Produto{
@@ -40,8 +65,21 @@ class Tulha extends Produto{
         this.sabores=sabores
         this.idade_animal=idade_animal
     }
+    get_id(){
+        return super.get_id()+this.idade_animal
+    }
     get_categoria(){
         return "Tulha_"+this.animal
+    }
+    get_div(){
+        return `
+        <div class="gproduto" id=${this.index}>
+        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+        <div class="gproduto_info">
+            <p class="gproduto_preco">${this.preco} R$ por KG</p>
+        </div>
+        </div>
+        `
     }
 }
 class Cama extends Produto{
@@ -50,8 +88,21 @@ class Cama extends Produto{
         this.animal=animal
         this.tamanho=tamanho
     }
+    get_id(){
+        return super.get_id()+this.peso+this.animal+this.tamanho
+    }
     get_categoria(){
         return "Cama"
+    }
+    get_div(){
+        return `
+        <div class="gproduto" id=${this.index}>
+        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+        <div class="gproduto_info">
+            <p class="gproduto_preco">${this.preco} R$</p>
+        </div>
+        </div>
+        `
     }
 }
 
@@ -82,4 +133,9 @@ new Racao("Royal Canin - Sensible - Gatos Adultos","royal_canin_sensible_gatos_a
 new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"],"Adulto")*/
 new Racao("Fãmil Premium","famil_gatos_castrados_10kg.png","130","10kg","Gato",["Salmão","Arroz"],"Castrados")
 
-console.log(G.CATG)
+for(var i=0;i<G.PRODTUDOS_ARRAY.length;i++){
+    let p=G.PRODTUDOS_ARRAY[i]
+    p.index=p.get_id()
+    G.PRODUTOS[p.index]=p
+}
+console.log(G.PRODUTOS)

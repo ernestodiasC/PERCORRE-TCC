@@ -1,5 +1,6 @@
 var G={
   PRODUTOS:{},
+  PRODTUDOS_ARRAY:[],
   F:{
     mudar_quantidade:function(idx,quant){
       let elemento=document.getElementById(idx)
