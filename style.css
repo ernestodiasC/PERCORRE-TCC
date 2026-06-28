@@ -72,3 +72,19 @@ img{
     font-size: 20px;
   }
 }
+
+.tipo_divisa_site{
+  width: auto;
+  height: max(120px,calc(12vw));
+  margin:0px;
+  padding:0px;
+}
+footer{
+  background-color: var(--cor_marrom);
+  color: var(--cor_claro);
+  text-align: center;
+}
+
+#footer_criado{
+  margin-bottom: 0rem;
+}

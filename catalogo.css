@@ -33,11 +33,13 @@ h2{
     color:var(--cor_marrom)
 }
 .categoria{
-  width: 90%;
-  overflow: hidden;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+    width: 90%;
+    overflow: hidden;
+    margin-top: 2rem;
 }
 .swiper-slide img{
     width: 10rem;
+}
+.area_laranja{
+    background-color: var(--cor_laranja2);
 }
