@@ -28,6 +28,8 @@ var G={
     Racao_Gato:[],
   },
   swiper_actives:[],
+  URLPARAMS: new URLSearchParams(window.location.search),
+  CARRINHO:{},
 }
 
 G.F.loadScript("produtos",true,function(){
@@ -35,6 +37,8 @@ G.F.loadScript("produtos",true,function(){
     G.F.loadScript("swiper",true,function(){
       if(document.getElementById('body_inicio')!=null){
         G.F.loadScript("inicio",true,function(){})
+      }else if(document.getElementById('produto_individual')!=null){
+        G.F.loadScript("produto_individual",true,function(){})
       }else{
         G.F.loadScript("catalogo",true,function(){})
       }
