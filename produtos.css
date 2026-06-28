@@ -1,1 +1,84 @@
 
+body {
+    /*background: url("./src/inicio/bannernovo.png");*/
+    /*width: 100vw;*/
+
+    /*background-size: auto max(890px,calc(100vw / 1.7));
+    background-repeat: no-repeat;*/
+    margin:0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:var(--cor_creme);
+    font-size:3rem;
+
+    font-family: 'chau';
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100dvh;
+    margin:1rem;
+    gap:2rem;
+}
+.imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor_claro);
+    padding: min(5rem,2.5%);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    border: .15rem solid var(--cor_marrom);
+    border-radius: .5rem;
+}
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor_claro);
+    padding: min(5rem,2.5%);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    border: .15rem solid var(--cor_marrom);
+    border-radius: .5rem;
+}
+button{
+    background-color: var(--cor_vermelho);
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'chau';
+    color: white;
+    border-radius: .5rem;
+    border-width: 0rem;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .container{
+    flex-direction: column;
+    }
+    #informacoes{
+        width: 100%;
+    }
+    .imagem{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1001px){
+    #informacoes{
+        height: 100%;
+    }
+    .imagem{
+        height: 100%;
+    }
+}
+.imagem img{
+    min-height: 28rem;
+    max-height: 100%;
+}
