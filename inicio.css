@@ -2,6 +2,12 @@
     background-size: auto max(890px,calc(100vw / 1.7));
     background-repeat: no-repeat;
 }
+@media screen and (orientation: portrait) {
+    .tipo_divisa{
+        background-size: 100vw;
+    }   
+}
+
 
 .tipo_divisa_site{
     width: auto;
