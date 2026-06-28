@@ -8,7 +8,6 @@
   --cor_creme: #FDEB9E;
   --cor_vermelho:#e7121f;
   --cor_claro: #f1dabc;
-  font-size: 20px;
   margin:0px;
   padding:0px;
 }
@@ -61,4 +60,15 @@ img{
 }
 .icon_redes{
   height: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+  :root{
+    font-size:14px;
+  }
+}
+@media screen and (orientation: landscape) {
+  :root{
+    font-size: 20px;
+  }
 }
