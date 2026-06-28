@@ -138,16 +138,26 @@ new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","45","5kg","Cach
 new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","70","10kg","Cachorro",["Carne"],"Adulto")
 new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","98","15kg","Cachorro",["Carne"],"Adulto")
 new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","150","25kg","Cachorro",["Carne"],"Adulto")
+new Racao("Sapeca Premium","sapeca_adultos_carne_e_vegetais.png","94","10kg","Cachorro",["Carne","Vegetais"],"Adulto")
+new Racao("Sapeca Premium","sapeca_premium_pequenas_racas_frango_peixe_arroz_integral_e_cenoura.png","97","10kg","Cachorro",["Carne","Vegetais"],"Pequenas Raças")
 
 // Gatos
 /*new Racao("Whiskas - Frango","whiskas_frango_900g.png","27.80","900g","Gato",["Frango"],"")
 new Racao("Royal Canin - Sensible - Gatos Adultos","royal_canin_sensible_gatos_adultos.png","99.99","1,5kg","Gato",["Sensible"],"Adulto")
 new Racao("Origens - Carne - Adulto","origens_adultos_carne.png","29.99","1kg","Gato",["Carne"],"Adulto")*/
 new Racao("Fãmil Premium","famil_gatos_castrados_10kg.png","130","10kg","Gato",["Salmão","Arroz"],"Castrados")
+new Racao("Kiara","kiara_gatos_adultos_mix.png","95","10kg","Gato",["Carne","Cereais"],"Adultos")
+new Racao("Atacama","atacama_castrados.png","185","10kg","Gato",["Carne"],"Castrados")
+new Racao("LeRoy Premium Especial","leroy_adultos_e_castrados_carne.png","138","10kg","Gato",["Carne"],"Adultos e Castrados")
+new Racao("LeRoy Premium Especial","leroy_adultos_e_castrados_frango.png","138","10kg","Gato",["Frango"],"Adultos e Castrados")
 
 for(var i=0;i<G.PRODTUDOS_ARRAY.length;i++){
     let p=G.PRODTUDOS_ARRAY[i]
-    p.index=p.get_id()
-    G.PRODUTOS[p.index]=p
+    let txt=p.get_id()
+    while(txt.includes(" ")){
+        txt=txt.replace(" ","_")
+    }
+    p.index=txt
+    G.PRODUTOS[txt]=p
 }
 console.log(G.PRODUTOS)

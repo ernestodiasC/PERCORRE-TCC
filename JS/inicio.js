@@ -3,6 +3,7 @@ let a=[
     "famil_gatos_castrados_10kg.png13010kgCastrados",
     "chacal_premium_plus_carne.png9815kgAdulto",
     "special_dog_carne.png14420kgAdulto",
+    "atacama_castrados.png18510kgCastrados",
 ]
 
 for(var i=0,sw=document.getElementById("principal_adicionar_swipers");i<a.length;i++){
