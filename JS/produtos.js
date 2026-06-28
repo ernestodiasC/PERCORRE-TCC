@@ -19,10 +19,13 @@ class Produto{
     get_div(){
         return `
         <div class="gproduto" id=${this.index}>
-        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
-        <div class="gproduto_info">
-            <p class="gproduto_preco">${this.preco} R$</p>
-        </div>
+            <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+            <div class="gproduto_nome_area">
+                <p class="gproduto_nome">${this.nome}</p>
+            </div>
+            <div class="gproduto_info">
+                <p class="gproduto_preco">${this.preco} R$</p>
+            </div>
         </div>
         `
     }
@@ -49,11 +52,14 @@ class Racao extends Produto{
     get_div(){
         return `
         <div class="gproduto" id=${this.index}>
-        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
-        <div class="gproduto_info">
-            <p class="gproduto_preco">${this.preco}R$</p>
-            <p class="gproduto_peso">${this.peso}</p>
-        </div>
+            <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+            <div class="gproduto_nome_area">
+                <p class="gproduto_nome">${this.nome}</p>
+            </div>
+            <div class="gproduto_info">
+                <p class="gproduto_preco">${this.preco}R$</p>
+                <p class="gproduto_peso">${this.peso}</p>
+            </div>
         </div>
         `
     }
@@ -74,10 +80,13 @@ class Tulha extends Produto{
     get_div(){
         return `
         <div class="gproduto" id=${this.index}>
-        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
-        <div class="gproduto_info">
-            <p class="gproduto_preco">${this.preco} R$ por KG</p>
-        </div>
+            <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+            <div class="gproduto_nome_area">
+                <p class="gproduto_nome">${this.nome}</p>
+            </div>
+            <div class="gproduto_info">
+                <p class="gproduto_preco">${this.preco} R$ por KG</p>
+            </div>
         </div>
         `
     }
@@ -97,10 +106,13 @@ class Cama extends Produto{
     get_div(){
         return `
         <div class="gproduto" id=${this.index}>
-        <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
-        <div class="gproduto_info">
-            <p class="gproduto_preco">${this.preco} R$</p>
-        </div>
+            <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
+            <div class="gproduto_nome_area">
+                <p class="gproduto_nome">${this.nome}</p>
+            </div>
+            <div class="gproduto_info">
+                <p class="gproduto_preco">${this.preco} R$</p>
+            </div>
         </div>
         `
     }
@@ -119,7 +131,7 @@ G.F.get_produto_by_id=function(id){
 new Racao("PremieR - Carne - Adulto - Raças Grandes","premier_racas_grandes_adultos_15kg.png","229.80","15kg","Cachorro",["Carne"],"Adulto")
 new Racao("Pedigree - Carne Frango e Cereais - Adulto","pedigree_adulto_carne_frango_e_cereais_10,1kg.png","179.99","10.1kg","Cachorro",["Carne","Frango","Cereais"])*/
 new Racao("Fãmil Premium Tradicional","famil_premium_10kg.png","78","10kg","Cachorro",["Carne"],"Adulto")
-new Racao("Lupy Dog","lupy_dog_adultos_carne_frango.png","45 ","7kg","Cachorro",["Carne","Frango"],"Adulto")
+new Racao("Lupy Dog","lupy_dog_adultos_carne_frango.png","45","7kg","Cachorro",["Carne","Frango"],"Adulto")
 new Racao("Lupy Dog","lupy_dog_adultos_carne_frango.png","118","20kg","Cachorro",["Carne","Frango"],"Adulto")
 new Racao("Special Dog","special_dog_carne.png","144","20kg","Cachorro",["Carne"],"Adulto")
 new Racao("Chacal Premium Plus","chacal_premium_plus_carne.png","45","5kg","Cachorro",["Carne"],"Adulto")
