@@ -15,3 +15,4 @@ for(var i=0,sw=document.getElementById("principal_adicionar_swipers");i<a.length
 }
 
 G.F.setup_swiper(".carrossel")
+G.F.setup_swiper(".cards_agro")

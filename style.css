@@ -150,3 +150,14 @@ margin-left: 1rem;
 margin-right: 1rem;
 padding-top: 1rem;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color:var(--cor_vermelho);
+}
+.swiper-button-prev{
+    left: 0px;
+}
+
+.swiper-button-next{
+    right: 0px;
+}
