@@ -26,6 +26,7 @@ var G={
       let carrinho_cru=JSON.stringify(G.CARRINHO)
       console.log(carrinho_cru)
       localStorage.setItem("user_carrinho",carrinho_cru)
+      G.F.recarregar_carrinho()
     },
     load_carrinho:function(){
       let carrinho_cru=localStorage.getItem("user_carrinho")
@@ -44,6 +45,7 @@ var G={
       }
       G.F.save_carrinho()
     },
+    recarregar_carrinho:function(){},
   },
   CATG:{
     Racao_Cachorro:[],

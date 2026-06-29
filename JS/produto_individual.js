@@ -16,5 +16,7 @@ if(G.URLPARAMS.has("id")){
         idx.innerText=p.nome
         idx=document.getElementById("produto_nome")
         idx.innerText=p.nome
+        idx=document.getElementById("produto_botao")
+        idx.onclick=function(){G.F.add_carrinho(p.index,1)}
     }
 }else{window.location.href = "./"}
