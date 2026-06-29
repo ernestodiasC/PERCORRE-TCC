@@ -24,6 +24,7 @@ var G={
     },
     save_carrinho:function(){
       let carrinho_cru=JSON.stringify(G.CARRINHO)
+      console.log(carrinho_cru)
       localStorage.setItem("user_carrinho",carrinho_cru)
     },
     load_carrinho:function(){
@@ -31,7 +32,18 @@ var G={
       if(carrinho_cru){
         G.CARRINHO=JSON.parse(carrinho_cru)
       }
-    }
+    },
+    add_carrinho:function(index,quantidade){
+      if(Object.hasOwn(G.CARRINHO,index)){
+        G.CARRINHO[index]+=quantidade
+      }else{
+        G.CARRINHO[index]=quantidade
+      }
+      if(G.CARRINHO[index]<1){
+        delete G.CARRINHO[index]
+      }
+      G.F.save_carrinho()
+    },
   },
   CATG:{
     Racao_Cachorro:[],
