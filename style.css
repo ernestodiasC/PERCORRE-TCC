@@ -58,6 +58,12 @@ img{
 .gproduto{
   user-select: none;
 }
+.gproduto img{
+  pointer-events: all;
+}
+.gproduto a{
+  color: var(--cor_marrom);
+}
 .icon_redes{
   height: 1rem;
 }

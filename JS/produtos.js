@@ -18,7 +18,7 @@ class Produto{
     }
     get_div(){
         return `
-        <div class="gproduto" id=${this.index}>
+        <div class="gproduto" id=${this.index}><a href=./produto.html?id=${this.index}>
             <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
             <div class="gproduto_nome_area">
                 <p class="gproduto_nome">${this.nome}</p>
@@ -26,7 +26,7 @@ class Produto{
             <div class="gproduto_info">
                 <p class="gproduto_preco">${this.preco} R$</p>
             </div>
-        </div>
+        </a></div>
         `
     }
     get_id(){
@@ -51,7 +51,7 @@ class Racao extends Produto{
     }
     get_div(){
         return `
-        <div class="gproduto" id=${this.index}>
+        <div class="gproduto" id=${this.index}><a href=./produto.html?id=${this.index}>
             <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
             <div class="gproduto_nome_area">
                 <p class="gproduto_nome">${this.nome}</p>
@@ -60,7 +60,7 @@ class Racao extends Produto{
                 <p class="gproduto_preco">${this.preco}R$</p>
                 <p class="gproduto_peso">${this.peso}</p>
             </div>
-        </div>
+        </a></div>
         `
     }
 }
@@ -79,7 +79,7 @@ class Tulha extends Produto{
     }
     get_div(){
         return `
-        <div class="gproduto" id=${this.index}>
+        <div class="gproduto" id=${this.index}><a href=./produto.html?id=${this.index}>
             <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
             <div class="gproduto_nome_area">
                 <p class="gproduto_nome">${this.nome}</p>
@@ -87,7 +87,7 @@ class Tulha extends Produto{
             <div class="gproduto_info">
                 <p class="gproduto_preco">${this.preco} R$ por KG</p>
             </div>
-        </div>
+        </a></div>
         `
     }
 }
@@ -105,7 +105,7 @@ class Cama extends Produto{
     }
     get_div(){
         return `
-        <div class="gproduto" id=${this.index}>
+        <div class="gproduto" id=${this.index}><a href=./produto.html?id=${this.index}>
             <img class="gproduto_imagem" src="${this.get_image()}" alt="${this.nome}">
             <div class="gproduto_nome_area">
                 <p class="gproduto_nome">${this.nome}</p>
@@ -113,7 +113,7 @@ class Cama extends Produto{
             <div class="gproduto_info">
                 <p class="gproduto_preco">${this.preco} R$</p>
             </div>
-        </div>
+        </a></div>
         `
     }
 }

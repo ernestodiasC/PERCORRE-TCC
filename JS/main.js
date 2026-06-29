@@ -51,6 +51,8 @@ G.F.loadScript("produtos",true,function(){
         G.F.loadScript("inicio",true,function(){})
       }else if(document.getElementById('produto_individual')!=null){
         G.F.loadScript("produto_individual",true,function(){})
+      }else if(document.getElementById('carrinho')!=null){
+        G.F.loadScript("carrinho",true,function(){})
       }else{
         G.F.loadScript("catalogo",true,function(){})
       }

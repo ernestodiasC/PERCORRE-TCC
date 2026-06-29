@@ -12,6 +12,7 @@ body {
     background-color:var(--cor_creme);
 
     font-family: 'chau';
+    overflow-x: hidden;
 }
 
 .container{

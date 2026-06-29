@@ -168,8 +168,6 @@ body {
     width: min(35rem,100%);
     border: 2px solid var(--cor_marrom);
     border-radius: min(3rem,5vw);
-    pointer-events: none;
-    user-select: none;
 }
 
 .cardinfo{
