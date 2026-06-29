@@ -21,6 +21,16 @@ var G={
       }else{
         callback()
       }
+    },
+    save_carrinho:function(){
+      let carrinho_cru=JSON.stringify(G.CARRINHO)
+      localStorage.setItem("user_carrinho",carrinho_cru)
+    },
+    load_carrinho:function(){
+      let carrinho_cru=localStorage.getItem("user_carrinho")
+      if(carrinho_cru){
+        G.CARRINHO=JSON.parse(carrinho_cru)
+      }
     }
   },
   CATG:{
@@ -33,6 +43,8 @@ var G={
 }
 
 G.F.loadScript("produtos",true,function(){
+  G.F.load_carrinho()
+  G.F.save_carrinho()
   G.F.loadScript_base("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",true,function(){
     G.F.loadScript("swiper",true,function(){
       if(document.getElementById('body_inicio')!=null){

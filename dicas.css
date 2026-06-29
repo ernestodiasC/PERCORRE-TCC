@@ -1,2 +1,222 @@
+body{background-size: auto max(890px,calc(100vw / 1.7));
+    background-repeat: no-repeat;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:var(--cor_claro);
+    font-family: 'chau';
+    overflow-x: hidden;
+}
+
+.textoprincipal{
+    align-items: center;
+}
+.textoprincipal h1{
+    font-family: 'art nuevo';
+    color: var(--cor_laranja);
+    background-color: var(--cor_marrom);
+    padding: 1rem;
+    border: 2px solid var(--cor_laranja);
+    border-radius:15px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.textoprincipal p{font-family: 'chau';
+    color: var(--cor_marrom);
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.75rem;
+}
+
+footer{background-color:var(--cor_marrom);
+    color: var(--cor_claro);
+text-align: center;
+margin-top: 5rem;
+}
 
 
+.lista-recomendacoes {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.lista-recomendacoes{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+
+.card-artigo{
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    transition:.3s;
+}
+
+.card-artigo:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.15);
+}
+
+
+/* CARD LARANJA */
+
+.card-laranja{
+    background:var(--cor_laranja2);
+}
+
+.card-laranja h3{
+    color:var(--cor_laranja);
+    background-color: var(--cor_marrom);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: 'art nuevo';
+}
+
+.card-laranja p:nth-of-type(2){
+    color:var(--cor_marrom);
+     font-family: 'chau';
+}
+
+.card-laranja a{
+    color:var(--cor_laranja);
+    background-color: var(--cor_marrom);
+    padding: 1rem;
+    border-radius: .5rem;
+font-family: 'art nuevo';
+}
+
+.card-laranja .conteudo-artigo p:first-child{
+    background:var(--cor_claro);
+    color:var(--cor_marrom);
+font-family: 'chau';
+}
+
+
+/* CARD MARROM */
+
+.card-marrom{
+    background:var(--cor_marrom);
+}
+
+.card-marrom h3{
+    color:var(--cor_marrom);
+    background-color: var(--cor_laranja2);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: 'art nuevo';
+}
+
+.card-marrom p:nth-of-type(2){
+    color:var(--cor_claro);
+    font-family: 'chau';
+}
+
+.card-marrom a{
+    color:var(--cor_marrom);
+    background-color: var(--cor_laranja2);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-family: 'art nuevo';
+}
+
+.card-marrom .conteudo-artigo p:first-child{
+    background:var(--cor_claro);
+    color:var(--cor_marrom);
+    font-family: '';
+}
+
+
+/* Imagem */
+
+.card-artigo img{
+    width:350px;
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    flex-shrink:0;
+}
+
+.card-laranja{border:2px solid var(--cor_marrom);}
+
+.card-marrom{border:2px solid var(--cor_laranja);}
+/* Conteúdo */
+
+.conteudo-artigo{
+    flex:1;
+}
+
+.conteudo-artigo p:first-child{
+    display:inline-block;
+
+    padding:6px 10px;
+
+    border-radius:6px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+.conteudo-artigo h3{
+    font-size:34px;
+
+    margin-bottom:15px;
+
+    line-height:1.3;
+}
+
+.conteudo-artigo p:nth-of-type(2){
+    line-height:1.6;
+
+    margin-bottom:25px;
+}
+
+.conteudo-artigo a{
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.conteudo-artigo a:hover{
+    text-decoration:underline;
+}
+
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+.card-artigo{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.card-artigo img{
+    width:100%;
+    height:180px;
+}
+
+.conteudo-artigo h3{
+    font-size:24px;
+}
+
+}
