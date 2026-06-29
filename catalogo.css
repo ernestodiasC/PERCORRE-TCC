@@ -13,6 +13,7 @@ body {
 
     font-family: 'chau';
     overflow-x: hidden;
+    
 }
 
 .container{
@@ -20,6 +21,9 @@ body {
     display: block;
     text-align: center;
     justify-content: center;
+    overflow-x: hidden;
+    
+    
 }
 .swiper-slide{
  /*   display: flex;
@@ -30,9 +34,15 @@ body {
     width: 100%;
     */
 }
-h2{
-    color:var(--cor_marrom)
+.racao{
+    color:var(--cor_marrom);
+    background-color: var(--cor_laranja);
+    padding: 1rem;
+    border: 2px solid var(--cor_marrom);
+    border-radius: 1rem;
+    font-family: 'art nuevo';
 }
+
 .categoria{
     width: 90%;
     overflow: hidden;
@@ -43,4 +53,12 @@ h2{
 }
 .area_laranja{
     background-color: var(--cor_laranja2);
+}
+
+.area_laranja h2{color:var(--cor_creme);
+background-color: var(--cor_marrom);
+padding: 1rem;
+border: 2px solid var(--cor_vermelho);
+border-radius: 1rem;
+font-family: 'art nuevo';
 }

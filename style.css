@@ -94,3 +94,9 @@ footer{
 #footer_criado{
   margin-bottom: 0rem;
 }
+.carrosel_produtos{border: 5px solid var(--cor_marrom);
+border-radius: 1rem;
+margin-left: 1rem;
+margin-right: 1rem;
+padding-top: 1rem;
+}
