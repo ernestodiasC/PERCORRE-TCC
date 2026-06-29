@@ -200,6 +200,12 @@ font-family: 'chau';
     text-decoration:underline;
 }
 
+.tipo_divisa_site{
+  width: 100%;
+  height: max(calc(12vw));
+  margin:0px;
+  padding:0px;
+}
 
 /* CELULAR */
 
