@@ -133,3 +133,11 @@ button:hover{
         padding:.8rem;
     }
 }
+
+footer{background-color:var(--cor_marrom);
+    color: var(--cor_claro);
+text-align: center;
+margin-top: 5rem;
+width: 100%;
+font-size: 1.5rem;
+}

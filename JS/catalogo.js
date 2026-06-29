@@ -7,7 +7,7 @@ function adicionar_categoria(categ){
         console.log(p)
         div.innerHTML+=p.get_div()
         p=document.getElementById(p.index)
-        p.classList.add('swiper-slide')
+        p.classList.add(`swiper-slide`/*,`gproduto_a_${categ}`*/)
 
         /*let img=document.createElement('a')
         img.className="swiper-slide"
