@@ -159,7 +159,7 @@ body {
     padding: min(5rem,2.5%);
     padding-top: 1rem;
     padding-bottom: 2rem;
-    width: 50vw;
+    width: 75vw;
     border: .15rem solid var(--cor_marrom);
     border-radius: .5rem;
 }

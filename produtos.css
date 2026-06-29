@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:var(--cor_creme);
+    background-color:var(--cor_claro);
     font-size:3rem;
 
     font-family: 'chau';
@@ -23,30 +23,30 @@ body {
     flex-direction: row;
     height: 100dvh;
     margin:1rem;
-    gap:2rem;
+    
 }
 .imagem{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--cor_claro);
+    background-color: var(--cor_marrom);
     padding: min(5rem,2.5%);
     padding-top: 1rem;
     padding-bottom: 2rem;
     width: 50%;
-    border: .15rem solid var(--cor_marrom);
+    border: .15rem solid var(--cor_laranja);
     border-radius: .5rem;
 }
 #informacoes{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: var(--cor_claro);
+    align-items: flex-start;
+    background-color: var(--cor_marrom);
     padding: min(5rem,2.5%);
     padding-top: 1rem;
     padding-bottom: 2rem;
     width: 50%;
-    border: .15rem solid var(--cor_marrom);
+    border: .15rem solid var(--cor_laranja);
     border-radius: .5rem;
 }
 button{
@@ -58,6 +58,7 @@ button{
     border-radius: .5rem;
     border-width: 0rem;
     cursor: pointer;
+    justify-content: center;
 }
 @media screen and (max-width:1000px){
     .container{
@@ -81,4 +82,54 @@ button{
 .imagem img{
     min-height: 28rem;
     max-height: 100%;
+}
+
+/* === Layout profissional responsivo - página do produto === */
+.container{
+    max-width:70rem;
+    margin:2rem auto;
+    padding:1.5rem;
+    gap:1.5rem;
+    align-items:stretch;
+    height:auto;
+}
+.imagem,
+#informacoes{
+    background-color: var(--cor_marrom);
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.12);
+}
+.imagem{
+    justify-content:center;
+    min-height:24rem;
+}
+.imagem img{
+    width:100%;
+    max-width:20rem;
+    min-height:auto;
+    object-fit:contain;
+}
+#informacoes{
+    gap:1rem;
+    color:var(--cor_laranja);
+}
+#produto_nome{
+    font-size:2rem;
+    font-family:'art nuevo';
+}
+#produto_preco{
+    font-size:1.8rem;
+    color:var(--cor_vermelho);
+}
+button{
+    width:100%;
+    transition:.25s;
+}
+button:hover{
+    transform:translateY(-.15rem);
+}
+@media screen and (max-width:50rem){
+    .container{
+        margin:1rem;
+        padding:.8rem;
+    }
 }
