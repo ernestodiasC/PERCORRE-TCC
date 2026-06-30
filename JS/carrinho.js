@@ -25,6 +25,7 @@ G.F.recarregar_carrinho=function(){
             Seu carrinho está vazio!
         </div>
         `
+        document.getElementById("preco_total_total").innerHTML=""
         return null
     }else{
         carrinho_lista.innerHTML=`
@@ -45,10 +46,12 @@ G.F.recarregar_carrinho=function(){
                 <div class="carrinho_info_nome">${p.nome}</div>
                 <div class="carrinho_info_peso">Peso da unidade: ${p.peso}</div>
                 <div class="carrinho_info_preco">Preço por unidade: R$ ${p.preco}</div>
-                <div class="carrinho_info_unidades">Unidades: ${G.CARRINHO[struct_names[i]]}</div>
                 <div class="carrinho_info_preco_total">Preço total: R$ ${p.preco_number*G.CARRINHO[struct_names[i]]}</div>
-                <button class="botao" onclick="G.F.add_carrinho('${p.index}',1)">Adicionar uma carrinho</button>
-                <button class="botao" onclick="G.F.add_carrinho('${p.index}',-1)">Remover uma unidade</button>
+                <div class="botao_carrinho">
+                    <button class="botao botao_add" onclick="G.F.add_carrinho('${p.index}',-1)" id="produto_botao_menos">-</button>
+                    <div id="carrinho_info_unidades">${G.CARRINHO[struct_names[i]]}</div>
+                    <button class="botao botao_add" onclick="G.F.add_carrinho('${p.index}',1)" id="produto_botao">+</button>
+                </div>
             </div>
         </div>
         `

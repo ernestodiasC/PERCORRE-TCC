@@ -54,7 +54,11 @@ img{display: inline-block;}
     cursor: pointer;
     margin-top: .5rem;
     text-align: left;
-    padding-left: min(4rem,5%);
+}
+.botao_add{
+    flex: 1fr;
+    width: 30%;
+    text-align: center;
 }
 .mandar_pedido{
     margin-left: 5%;
@@ -104,6 +108,15 @@ h1{
     margin-left: 5%;
     margin-bottom: 0rem;
 }
+
+.botao_carrinho{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 @media screen and (orientation: portrait) {
     .carrinho_item{
         flex-direction: column;
@@ -111,5 +124,9 @@ h1{
     .carrinho_imagem{
         width: 50%;
         height: auto;
+    }
+    .carrinho_info_container,.carrinho_imagem_container{
+        margin: 0px;
+        text-align: center;
     }
 }
