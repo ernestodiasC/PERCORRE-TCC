@@ -20,9 +20,15 @@ if(G.URLPARAMS.has("id")){
         idx.onclick=function(){
             G.F.add_carrinho(p.index,1)
             let idx=document.getElementById("produto_quantidade_ja_no_carrinho")
-            idx.innerText="Itens no Carrinho: "+String(G.F.get_carrinho(p.index))
+            idx.innerText=String(G.F.get_carrinho(p.index))
+        }
+        idx=document.getElementById("produto_botao_menos")
+        idx.onclick=function(){
+            G.F.add_carrinho(p.index,-1)
+            let idx=document.getElementById("produto_quantidade_ja_no_carrinho")
+            idx.innerText=String(G.F.get_carrinho(p.index))
         }
         idx=document.getElementById("produto_quantidade_ja_no_carrinho")
-        idx.innerText="Itens no Carrinho: "+String(G.F.get_carrinho(p.index))
+        idx.innerText=String(G.F.get_carrinho(p.index))
     }
 }else{window.location.href = "./"}

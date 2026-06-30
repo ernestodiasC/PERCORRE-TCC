@@ -24,7 +24,7 @@ class Produto{
                 <p class="gproduto_nome">${this.nome}</p>
             </div>
             <div class="gproduto_info">
-                <p class="gproduto_preco">R$ ${this.preco}</p>
+                <div class="gproduto_preco">R$ ${this.preco}</div>
             </div>
         </a></div>
         `
@@ -57,8 +57,8 @@ class Racao extends Produto{
                 <p class="gproduto_nome">${this.nome}</p>
             </div>
             <div class="gproduto_info">
-                <p class="gproduto_preco">R$ ${this.preco}</p>
-                <p class="gproduto_peso">${this.peso}</p>
+                <div class="gproduto_preco">R$ ${this.preco}</div>
+                <div class="gproduto_peso">${this.peso}</div>
             </div>
         </a></div>
         `
@@ -85,7 +85,7 @@ class Tulha extends Produto{
                 <p class="gproduto_nome">${this.nome}</p>
             </div>
             <div class="gproduto_info">
-                <p class="gproduto_preco">${this.preco} R$ por KG</p>
+                <div class="gproduto_preco">${this.preco} R$ por KG</div>
             </div>
         </a></div>
         `
@@ -111,7 +111,7 @@ class Cama extends Produto{
                 <p class="gproduto_nome">${this.nome}</p>
             </div>
             <div class="gproduto_info">
-                <p class="gproduto_preco">R$ ${this.preco}</p>
+                <div class="gproduto_preco">R$ ${this.preco}</div>
             </div>
         </a></div>
         `

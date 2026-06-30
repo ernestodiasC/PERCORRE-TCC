@@ -103,11 +103,7 @@ img{
     text-align:center;
 }
 .gproduto_nome{
-  font-size: 1.5rem;
-}
-.gproduto_preco{
-    color:var(--cor_marrom);
-    font-size:1.2rem;
+  font-size: 2.2rem;
 }
 @media screen and (max-width:50rem){
     .gproduto a{
@@ -171,4 +167,17 @@ padding-top: 1rem;
 }
 .botao:active{
   transform: scale(1.1);
+}
+.gproduto_peso, .gproduto_preco{
+  color: var(--cor_vermelho);
+  flex: 1fr;
+  align-items: center;
+  font-size:1.75rem;
+}
+.gproduto_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
 }

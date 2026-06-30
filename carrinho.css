@@ -104,3 +104,12 @@ h1{
     margin-left: 5%;
     margin-bottom: 0rem;
 }
+@media screen and (orientation: portrait) {
+    .carrinho_item{
+        flex-direction: column;
+    }  
+    .carrinho_imagem{
+        width: 50%;
+        height: auto;
+    }
+}
