@@ -37,6 +37,7 @@ body {
     width:90%;
     margin-top: .5rem;
     border: 5px solid var(--cor_marrom);
+    background-color: var(--cor_laranja);
     border-radius: 5px;
     padding: 5px;
 }
@@ -52,10 +53,15 @@ img{display: inline-block;}
     border-width: 0rem;
     cursor: pointer;
     margin-top: .5rem;
-    width: 80%;
+    text-align: left;
+    padding-left: min(4rem,5%);
 }
+
 .carrinho_imagem{
-    height: 15rem;
+    height: 20rem;
+}
+.carrinho_imagem_container{
+    margin-left: 2.5rem;
 }
 .tipo_divisa_site{
   width: 100%;
