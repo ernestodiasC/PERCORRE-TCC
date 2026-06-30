@@ -11,7 +11,8 @@ let carrinho_mandar_para_zap=function(){
     while(text.includes(" ")){
         text=text.replace(" ","%20")
     }
-    console.log("https://wa.me/5551982355620?text="+text)
+    window.open("https://wa.me/5551982355620?text="+text,"_blank")
+
 }
 
 G.F.recarregar_carrinho=function(){

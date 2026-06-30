@@ -25,7 +25,7 @@ let loop=function(nct){
     let dt=(nct-ct)/10
     ct=nct
     time-=dt
-    console.log(time)
+    /*console.log(time)*/
     if(time<=0){
         id1.src="./src/inicio/agro_imagem"+String(next)+".png"
         time=1000
