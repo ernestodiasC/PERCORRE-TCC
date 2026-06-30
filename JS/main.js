@@ -46,6 +46,14 @@ var G={
       G.F.save_carrinho()
     },
     recarregar_carrinho:function(){},
+    get_carrinho:function(index){
+      if(Object.hasOwn(G.CARRINHO,index)){
+        return G.CARRINHO[index]
+      }else{
+        return 0
+      }
+
+    },
   },
   CATG:{
     Racao_Cachorro:[],

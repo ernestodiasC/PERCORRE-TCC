@@ -17,6 +17,12 @@ if(G.URLPARAMS.has("id")){
         idx=document.getElementById("produto_nome")
         idx.innerText=p.nome
         idx=document.getElementById("produto_botao")
-        idx.onclick=function(){G.F.add_carrinho(p.index,1)}
+        idx.onclick=function(){
+            G.F.add_carrinho(p.index,1)
+            let idx=document.getElementById("produto_quantidade_ja_no_carrinho")
+            idx.innerText="Itens no Carrinho: "+String(G.F.get_carrinho(p.index))
+        }
+        idx=document.getElementById("produto_quantidade_ja_no_carrinho")
+        idx.innerText="Itens no Carrinho: "+String(G.F.get_carrinho(p.index))
     }
 }else{window.location.href = "./"}

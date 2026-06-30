@@ -109,16 +109,28 @@ button{
     object-fit:contain;
 }
 #informacoes{
-    gap:1rem;
+    gap:.1rem;
     color:var(--cor_laranja);
 }
 #produto_nome{
-    font-size:2rem;
+    font-size:4rem;
     font-family:'art nuevo';
+    margin: .1rem;
 }
 #produto_preco{
-    font-size:1.8rem;
+    font-size:2rem;
     color:var(--cor_vermelho);
+    margin: 1rem;
+}
+#produto_peso{
+    font-size:2rem;
+    color:var(--cor_laranja);
+    margin: 1rem;
+}
+#produto_quantidade_ja_no_carrinho{
+    font-size:2rem;
+    color:var(--cor_vermelho);
+    margin: 1rem;
 }
 button{
     width:100%;
