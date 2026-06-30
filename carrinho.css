@@ -56,6 +56,12 @@ img{display: inline-block;}
     text-align: left;
     padding-left: min(4rem,5%);
 }
+.mandar_pedido{
+    margin-left: 5%;
+    padding:1rem;
+    margin-top:.5rem;
+    margin-bottom: 1rem;
+}
 
 .carrinho_imagem{
     height: 20rem;
@@ -88,6 +94,7 @@ h1{
     font-size: 3rem;
     width:75%;
     margin-left: 12.5%;
+    margin-bottom: 0rem;
 }
 .preco_total_total{
     color:var(--cor_vermelho);
@@ -95,4 +102,5 @@ h1{
     margin:0px;
     padding: 0px;
     margin-left: 5%;
+    margin-bottom: 0rem;
 }

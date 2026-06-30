@@ -163,9 +163,12 @@ padding-top: 1rem;
 }
 
 .botao{
-    transition:.25s;
+    transition: .25s;
 }
 .botao:hover{
     transform:translateY(-.15rem);
     background-color: #ff3d4a;
+}
+.botao:active{
+  transform: scale(1.1);
 }
