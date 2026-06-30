@@ -1,4 +1,5 @@
-G.F.setup_swiper=function(nomezin){
+G.F.setup_swiper=function(nomezin,delay=2500,custom){
+  if(!custom){
     G.swiper_actives.push(
       new Swiper(nomezin, {
         loop: true,
@@ -7,7 +8,7 @@ G.F.setup_swiper=function(nomezin){
         spaceBetween: 20,
       
         autoplay: {
-          delay: 2500,
+          delay: delay,
           disableOnInteraction: false,
         },
       
@@ -31,4 +32,8 @@ G.F.setup_swiper=function(nomezin){
         }
       })
     )
+  }else{
+    G.swiper_actives.push(
+      new Swiper(nomezin,custom)) 
   }
+}

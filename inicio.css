@@ -147,12 +147,29 @@ body {
     border-radius: .5rem;
 }
 
-.card img{
+.cards_agro {
     width: min(35rem,100%);
+    height: 20rem;
     border: 2px solid var(--cor_marrom);
     border-radius: min(3rem,5vw);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
+.cards_agro img{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+#loja_1 {
+  z-index: 1;
+}
+#loja_2 {
+  z-index: 2;
+}
 .cardinfo{
     margin-top: 1rem;
     color: var(--cor_marrom);
