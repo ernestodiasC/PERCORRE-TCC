@@ -158,6 +158,7 @@ footer{
     margin-top: 5rem;
     width: 100%;
     font-size: 1.5rem;
+    overflow-x: hidden;
 }
 .botao_carrinho{
   display: flex;
